@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 4</title>
+    <link rel="stylesheet" href="desafio_4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Roboto:wght@400;700&family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main id="conteudo">
@@ -13,20 +15,23 @@
             <span id="texto">Faça login ou registre-se para começar a construir seus projetos ainda hoje.</span>
             <form id="login">
                 <label for="email">E-mail
-                <input id="email" username="email" type="email" placeholder="Digitee seu e-mail" required>
+                <input id="email" username="email" type="email" placeholder="Digite seu e-mail" required>
                 </label>
-                <label for="senha">Senha
-                    <span id="esqueceu">Esqueceu a senha?</span>
+                <label for="senha">
+                    <div id="ajustarSenhas">
+                        <span>Senha</span>
+                        <span id="esqueceu">Esqueceu a senha?</span>
+                    </div>
                     <div id="caixaSenha">
-                    <input id="senha" username="senha" type="password" placeholder="Digite sua senha" required>
-                    <img src="fotos/eye-off.svg" alt="senhaEscondida">
-                </div>
+                        <input id="senha" username="senha" type="password" placeholder="Digite sua senha" required>
+                        <button id="ocultar"><img src="fotos/eye-off.svg" alt="senhaEscondida"></button>
+                    </div>
                 </label>
                 <button id="entrar">Entrar</button>
             </form>
-            <div>Ainda não tem uma conta?<a id="cadastrar">Inscreva-se(não funcional)</a></div>
+            <div id="cadastrar">Ainda não tem uma conta? <span id="inscrever">Inscreva-se</span></div>
         </section>
     </main>
-    <img src="fotos/Rectangle 2.png" alt="Curvy Blue Waves" id="imagem">
+    <img src="fotos/fundo.png" alt="Curvy Blue Waves" id="imagem">
 </body>
 </html>
