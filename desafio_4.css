@@ -35,7 +35,11 @@ h1 {
     color: #1E293B;
 }
 
-#texto {
+p {
+    margin: 0;
+}
+
+#texto{
     display: inline-block;
     font-weight: normal;
     font-size: 16px;
@@ -48,6 +52,7 @@ input,label,#entrar {
     font-weight: 600;
     border: none;
     width: 365px;
+    background: none;
 }
 
 input:focus{
